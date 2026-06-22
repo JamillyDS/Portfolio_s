@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+:root {
+  --fundo: #131212;
+  --colorFontAuxiliar: #ff7f00;
+  --fontCor: #551a8b;
+  --fontPrincipal: "Nunito", sans-serif;
+  --fontSecundaria: "Pixelify Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--fundo);
+  color: #fff;
+}
+
+.cabecario-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3%;
+  padding: 1%;
+  margin: 0.5%;
+  font-family: var(--fontPrincipal);
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--colorFontAuxiliar);
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  .container-navegacao a {
+    padding: 12px;
+    color: var(--colorFontAuxiliar);
+    transition: 0.7s;
+    cursor: pointer;
+  }
+
+  .container-navegacao a:hover {
+    border: solid 1px;
+    border-radius: 8px;
+  }
+}
+
+.container-home {
+  padding-top: 18%;
+  padding-left: 3%;
+  margin: 20px;
+  padding-bottom: 14%;
+  font-family: var(--fontSecundaria);
+  font-weight: normal;
+  color: var(--colorFontAuxiliar);
+
+  .title {
+    line-height: 1;
+    font-size: 39px;
+    flex-wrap: wrap;
+    text-wrap: balance;
+  }
+
+  .botao {
+    display: flex;
+    justify-content: left;
+    font-size: 28px;
+    margin-top: 16px;
+    background: linear-gradient(90deg, #1a4c7f, #66e2c1);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 12px;
+    font-family: var(--fontSecundaria);
+    cursor: pointer;
+    transition: 0.7s;
+  }
+
+  .botao:hover {
+    background: linear-gradient(90deg, #9d7c4a, #c9fca9);
+    color: var(--fundo);
+  }
+}
+
+.conainer-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+  margin: 3px;
+
+  .position {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 28px;
+    font-family: var(--fontSecundaria);
+    color: var(--colorFontAuxiliar);
+    text-shadow: 2px 2px 0 #251301;
+  }
+
+  .card-1 {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    padding-top: 7%;
+    padding-bottom: 12%;
+    font-family: var(--fontPrincipal);
+    font-size: 18px;
+  }
+
+  .card-1 .text {
+    flex-wrap: wrap;
+    text-wrap: balace;
+    word-break: break-all;
+    padding-top: 5%;
+    padding-left: 4%;
+  }
+
+  .img-1 {
+    width: 100%;
+    height: 100vh;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: #ff7f00;
+    padding-right: 3%;
+    border-radius: 50%;
+  }
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--fontPrincipal);
+}
+
+.card-2 .title {
+  padding-right: 32%;
+  padding-bottom: 1%;
+}
+
+.card-2 .text {
+  font-size: 18px;
+  flex-wrap: wrap;
+  text-wrap: balace;
+  word-break: break-all;
+  padding-top: 5%;
+  padding-left: 4%;
+}
+
+.card-2 .icones-conteiner {
+  text-align: center;
+  padding-top: 1%;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.7s;
+  padding-bottom: 33%
+}
+
+.card-2 .icones-conteiner :hover {
+  background: linear-gradient(90deg, #456462, #01a91a);
+  padding: 2%;
+  border-radius: 10px;
+}
+
+i {
+  text-align: center;
+}
+
+.container-project {
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  padding: 2%;
+}
+
+.div1,
+.div2,
+.div3,
+.div4 {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  color: #131212;
+
+  .text {
+    font-family: var(--fontPrincipal);
+    padding: 2%;
+  }
+
+  a {
+    background: linear-gradient(90deg, #1a4c7f, #66e2c1);
+    color: #131212;
+    padding: 1%;
+    margin: 20px;
+    font-family: var(--fontSecundaria);
+    border-radius: 20px;
+    transition: 0.7s;
+  }
+
+  a:hover {
+    background: linear-gradient(90deg, #9d7c4a, #c9fca9);
+    color: #fff;
+  }
+}
+
+.title-div {
+  text-align: center;
+  margin: 2px;
+  font-family: var(--fontSecundaria);
+}
+
+.container-contato {
+  background: linear-gradient(90deg, #1a4c7f, #66e2c1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5%;
+
+  i {
+    font-size: 26px;
+    cursor: pointer;
+  }
+}
+
+.title3 {
+  color: #131212;
+  font-family: var(--fontSecundaria);
+  margin: 2px;
+  font-size: 18px;
+}
